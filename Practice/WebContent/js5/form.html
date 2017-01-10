@@ -5,19 +5,37 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 function func1(){
+	if(document.form01.name1.value.length < 4 || document.form01.name1.value.length > 7){
+		alert("4~7자");
+		document.form01.name1.focus();
+	}else{
+		alert("성공");
+	}
+}
 
+function move(){
+	if(document.form01.age.value.length==2){
+		document.form01.ju1.focus();
+	}
+	if(document.form01.ju1.value.length==6){
+		document.form01.ju2.focus();
+	}
+	if(document.form01.ju2.value.length==7){
+		document.form01.cp.focus();
+	} 
 }
 </script>
 </head>
 <body>
 	<form name="form01" action="action.jsp" method="get">
 		이름 : <input type="text" name="name1" value=""><br>
-		나이 : <input type="text" name="age" value=""><br>
+		나이 : <input type="text" name="age" value="" onkeyup="move()"><br>
+		주민번호 : <input type="text" name="ju1" value="" onkeyup="move()"> <input type="text" name="ju2" value="" onkeyup="move()"><br>		
 		전화번호 : <input type="text" name="cp"><br>
 		주소 : <input type="text" name="address"><br>	
 		<input type="submit" value="submit">
 		<input type="reset" value="reset">
-		<input type="button" value="bu" onclick="document.form01.submit();">
+		<input type="button" value="bu" onclick="func1();">
 	</form>
 </body>
 </html>

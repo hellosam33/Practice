@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+function func1(){
+	if(document.fr.gender.value.length==0){
+		alert("성별선택");
+		document.fr.gender[0].click();
+		return;
+	}
+	
+		
+}
+</script>
+</head>
+<body>
+<h1>TEST3.HTML</h1>
+<form action="a.jsp" name="fr" method="get">
+성별 : <input type="radio" name="gender" value="남">남 <input type="radio" name="gender" value="여">여 <br>
+취미 : <input type="checkbox" name="hobby" value="여행">여행<input type="checkbox" name="hobby" value="독서">독서
+	<input type="checkbox" name="hobby" value="게임">게임<br>
+	<input type="submit" value="전송"><input type="reset" value="초기화"><input type="button" value="버튼" onclick="func1();">
+</form>
+</body>
+</html>
