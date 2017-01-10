@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hello</title>
+<script type="text/javascript">
+	week = ['일', '월', '화', '수', '목', '금', '토'];
+
+	d1 = new Date();
+	d2 = new Date(2000, 1, 1);
+	d3 = new Date(2008, 11, 11, 15, 30, 40);
+	
+	document.write(d1.getFullYear() + "년 " + (d1.getMonth() + 1) + "월 "
+			+ d1.getDate() + "일 " + week[d1.getDay()] + "요일 " + d1.getHours() + "시"
+			+ d1.getMinutes() + "분 " + d1.getSeconds() + "초 " + "<br>");
+</script>
+</head>
+<body>
+</body>
+</html>

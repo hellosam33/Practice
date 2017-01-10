@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// String(문자열, 속성, 함수)
+
+	// @@객체생성@@
+	// 변수 = new String("Stirng");
+	// var = "String";
+
+	// @@attribute@@
+	// 문자열 길이 : var.length
+	// 함수 : 글자모양  var.bold(), .italics(), fontcolor(), fontsize(), toLowerCase(), toUpperCase()
+	// 	          문자열 관련 : charAt(), indexOf(), lastIndexOf(), substring(start, end), slice(start, end), 
+	//				substr(start, amount), concat(string), split(character, amount)
+
+	m = new String("String");
+	msg = "Hello. Wellcom to my homepage.";
+
+	document.write(msg.length + "<br>");
+	document.write(m + "<br>");
+	document.write(msg + "<br>");
+	document.write(msg.fontcolor("blue").fontsize(20) + "<br>");
+	document.write(msg.toUpperCase() + "<br>");
+	document.write(msg.bold() + "<br>");
+	document.write(msg.substring(7, 14) + "<br>");
+	document.write(msg.substring(7) + "<br>");
+
+	var Id = "900808-2456789"
+	
+	Id.charAt(7) == 1|| Id.charAt(7) == 3 ? document.write("남자") : document.write("여자");
+</script>
+</head>
+<body>
+
+</body>
+</html>
